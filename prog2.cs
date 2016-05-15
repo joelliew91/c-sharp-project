@@ -13,6 +13,9 @@ namespace L2{
             
             Console.WriteLine("This is from Class B");
         }
+        public static void identity(){
+            Console.WriteLine("What is this B");
+        }
     }
     
     class Main_tester {
@@ -23,6 +26,7 @@ namespace L2{
             varB.sayHello();
             varA = new B();
             varA.sayHello();
+            B.identity();
             
         }
     }
