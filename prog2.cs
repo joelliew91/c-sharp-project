@@ -3,13 +3,13 @@ using System;
 namespace L2{
     
     class A: object {
-        public void sayHello(){
+        public virtual void sayHello(){
             Console.WriteLine("This is from Class A");
         }
     }
     
     class B: A {
-        public void sayHello(){
+        public override void sayHello(){
             
             Console.WriteLine("This is from Class B");
         }
@@ -21,6 +21,8 @@ namespace L2{
             B varB = new B();
             varA.sayHello();
             varB.sayHello();
+            varA = new B();
+            varA.sayHello();
             
         }
     }
