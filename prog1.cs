@@ -1,21 +1,28 @@
 using System;
 
 namespace Test{
-    
-    class Prog{
-        public static void Main(string [] args){
-            Console.WriteLine("This is a Test");
-            Test.innertest.Prog2 newvar = new Test.innertest.Prog2();
-            newvar.sayhello();
-        }
+    class Jay{
+        static void Main(string [] args){
+        Console.WriteLine("This is a Test");
+        Test.innertest.Prog2 newvar = new Test.innertest.Prog2();
+        newvar.sayhello();
+        Test.innertest.Prog2 newvar2 = new Test.innertest.Prog2();
+        newvar2.sayhello();
+
     }
+
+    }
+
     
     namespace innertest
     {
-        public class Prog2{
+       class Prog2 {
             public void sayhello(){
                 Console.WriteLine("This is from nested class"); 
             }
+            // override object.Equals
         }
+        
     }
 }
+
